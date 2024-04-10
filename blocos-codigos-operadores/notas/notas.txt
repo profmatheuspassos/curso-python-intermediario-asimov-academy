@@ -1,0 +1,1 @@
+Maneira "tradicional" e não recomendada de lidar com arquivos
