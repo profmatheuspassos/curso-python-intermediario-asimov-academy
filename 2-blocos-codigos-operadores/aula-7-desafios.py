@@ -59,7 +59,9 @@ def busca_dados2():
 def processa_dados2(dados2):
     return f'Dados "{dados2}" foram processados'
 
-dados_processados2 = (dados_processados2 := processa_dados2(busca_dados2())) if (busca_dados2() is not None) else 'N/A'
+dados_processados2 = (dados_processados2 := processa_dados2(busca_dados2())) if (busca_dados2() is not None) else 'N/A' # Solução minha
+
+dados_processados2 = (processa_dados2(dados_buscados)) if (dados_buscados := busca_dados2() is not None) else 'N/A' # Sugestão do professor
 
 print(f'Resultado: {dados_processados2}')
 
