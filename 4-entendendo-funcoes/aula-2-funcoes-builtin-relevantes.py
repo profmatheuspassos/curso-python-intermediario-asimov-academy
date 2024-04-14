@@ -22,9 +22,9 @@ def somarDois(num):
 
 numeros = [3, 6, 10]
 mapa = map(somarDois, numeros)
-print(numeros)
+print(f"Números: {numeros}")
 print("mapa = map(somarDois, numeros)")
-print(list(mapa))
+print(f"Resultado: {list(mapa)}")
 
 print("\n")
 
