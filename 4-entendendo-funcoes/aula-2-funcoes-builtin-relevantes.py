@@ -17,8 +17,22 @@ print(any(booleanos))
 print("\n")
 
 print("Função map")
+def somarDois(num):
+    return num + 2
 
+numeros = [3, 6, 10]
+mapa = map(somarDois, numeros)
+print(numeros)
+print("mapa = map(somarDois, numeros)")
+print(list(mapa))
 
 print("\n")
 
 print("Função filter")
+def meuFiltro(n):
+    return n > 5
+
+filtro = filter(meuFiltro, numeros)
+print(numeros)
+print("filtro = filter(meuFiltro, numeros)")
+print(list(filtro))
